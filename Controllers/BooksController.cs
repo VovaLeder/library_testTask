@@ -10,17 +10,18 @@ namespace Library.Controllers
     [EnableCors("ReactPolicy")]
     public class BooksController : Controller
     {
-        private readonly BookService bookService;
-        public BooksController(BookService bookService)
+        private readonly ApplicationContext _context;
+
+        public BooksController(ApplicationContext context)
         {
-            this.bookService = bookService;
+            _context = context;
         }
 
         //GET api/books
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            return Ok(bookService.GetAll());
+            return Ok(_context.Books.ToList());
         }
 
 
@@ -28,21 +29,32 @@ namespace Library.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            return Ok(bookService.GetById(id));
+            Book? book = _context.Books.FirstOrDefault(x => x.Id == id);
+            return Ok(book);
         }
 
         //POST api/books
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] Book book)
         {
-            return CreatedAtAction("Get", new { id = book.Id }, bookService.Create(book));
+            book.PublishDate = book.PublishDate.ToUniversalTime();
+            _context.Books.Add(book);
+            _context.SaveChanges();
+            return Ok(book);
         }
 
         //PUT api/books/5
         [HttpPut("{id}")]
         public async Task<IActionResult> Put(int id, [FromBody] Book book)
         {
-            bookService.Update(id, book);
+            Book old_book = _context.Books.First(x => x.Id == id);
+            old_book.Title = book.Title;
+            old_book.PublishDate = book.PublishDate.ToUniversalTime();
+            old_book.Genre = book.Genre;
+            old_book.Author = book.Author;
+
+            _context.SaveChanges();
+
             return NoContent();
         }
 
@@ -50,7 +62,11 @@ namespace Library.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            bookService.Delete(id);
+            Book book = _context.Books.First(x => x.Id == id);
+
+            _context.Books.Remove(book);
+            _context.SaveChanges();
+
             return NoContent();
         }
 

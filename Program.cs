@@ -1,4 +1,5 @@
-using Library;
+using Microsoft.EntityFrameworkCore;
+using Library.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,11 +7,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddSingleton<BookService>();
 builder.Services.AddCors(o => o.AddPolicy("ReactPolicy", builder =>
 {
     builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
 }));
+
+builder.Services.AddDbContext<ApplicationContext>(options => options.UseNpgsql("Host=localhost;Port=5432;Database=library;Username=postgres;Password=1234"));
 
 var app = builder.Build();
 

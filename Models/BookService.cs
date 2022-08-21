@@ -1,16 +1,19 @@
-﻿using Library.Models;
+﻿using Microsoft.EntityFrameworkCore;
 
-namespace Library
+namespace Library.Models
 {
     public class BookService
     {
+
+        private readonly ApplicationContext _context;
+
         private static List<Book> books = new List<Book>();
         private static int Count = 1;
 
         private static readonly string[] titles = new string[] { "Konosuba", "Bakuen", "ToraDora" };
         private static readonly string[] authors = new string[] { "Natsume Akatsuki", "Natsume Akatsuki", "Yuyuko Takemiya" };
-        private static readonly DateTime[] publishDates = new DateTime[] { new DateTime(2014, 6, 28), new DateTime(2013, 10, 1) ,new DateTime(2006, 3, 10) };
-        
+        private static readonly DateTime[] publishDates = new DateTime[] { new DateTime(2014, 6, 28), new DateTime(2013, 10, 1), new DateTime(2006, 3, 10) };
+
         static BookService()
         {
             for (int i = 0; i < 3; i++)
@@ -34,7 +37,7 @@ namespace Library
         {
             return books.Where(book => book.Id == id).FirstOrDefault();
         }
-        public Book Create(Book book) 
+        public Book Create(Book book)
         {
             book.Id = Count++;
             books.Add(book);
@@ -48,7 +51,7 @@ namespace Library
             found.Genre = book.Genre;
             found.Author = book.Author;
         }
-        public void Delete(int id) 
+        public void Delete(int id)
         {
             books.RemoveAll(book => book.Id == id);
         }

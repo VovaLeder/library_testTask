@@ -27,3 +27,10 @@ C:\Users\342\source\repos\Library\obj\Debug\net6.0\ref\Library.dll
 C:\Users\342\source\repos\Library\bin\Debug\net6.0\react-ui-crud\public\manifest.json
 C:\Users\342\source\repos\Library\bin\Debug\net6.0\react-ui-crud\package-lock.json
 C:\Users\342\source\repos\Library\bin\Debug\net6.0\react-ui-crud\package.json
+C:\Users\342\source\repos\Library\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\342\source\repos\Library\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\342\source\repos\Library\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\342\source\repos\Library\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\342\source\repos\Library\bin\Debug\net6.0\Npgsql.dll
+C:\Users\342\source\repos\Library\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\342\source\repos\Library\obj\Debug\net6.0\Library.csproj.CopyComplete

@@ -34,6 +34,11 @@ class CreateForm extends React.Component {
         })
             .then(res => res.json())
             .then(book => {
+                var date = book.publishDate;
+                var y = date.slice(0, 4);
+                var m = date.slice(5, 7);
+                var d = date.slice(8, 10);
+                book.publishDate = new Date(y, m - 1, d).toLocaleDateString("ru-RF");
                 this.props.addBookToState(book);
                 this.props.toggle();
             })
