@@ -12,13 +12,9 @@ C:\Users\342\source\repos\Library\obj\Debug\net6.0\Library.AssemblyInfoInputs.ca
 C:\Users\342\source\repos\Library\obj\Debug\net6.0\Library.AssemblyInfo.cs
 C:\Users\342\source\repos\Library\obj\Debug\net6.0\Library.csproj.CoreCompileInputs.cache
 C:\Users\342\source\repos\Library\obj\Debug\net6.0\Library.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\342\source\repos\Library\obj\Debug\net6.0\Library.RazorAssemblyInfo.cache
-C:\Users\342\source\repos\Library\obj\Debug\net6.0\Library.RazorAssemblyInfo.cs
 C:\Users\342\source\repos\Library\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\342\source\repos\Library\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\342\source\repos\Library\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\342\source\repos\Library\obj\Debug\net6.0\scopedcss\bundle\Library.styles.css
-C:\Users\342\source\repos\Library\obj\Debug\net6.0\scopedcss\projectbundle\Library.bundle.scp.css
 C:\Users\342\source\repos\Library\obj\Debug\net6.0\Library.dll
 C:\Users\342\source\repos\Library\obj\Debug\net6.0\refint\Library.dll
 C:\Users\342\source\repos\Library\obj\Debug\net6.0\Library.pdb

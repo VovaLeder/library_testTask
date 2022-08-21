@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NIuZY/qIfJow51oZf2Rb/HY87G/d6ZNfQknPys0BeF4=",
+  "Hash": "/F3R5o89h7wfCd43TctHqET1Uqpa/o/w6ys7x8UMDUU=",
   "Source": "Library",
   "BasePath": "_content/Library",
   "Mode": "Default",
@@ -16,40 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "C:\\Users\\342\\source\\repos\\Library\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Library.styles.css",
-      "SourceId": "Library",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\342\\source\\repos\\Library\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/Library",
-      "RelativePath": "Library.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\342\\source\\repos\\Library\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Library.styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\342\\source\\repos\\Library\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Library.bundle.scp.css",
-      "SourceId": "Library",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\342\\source\\repos\\Library\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/Library",
-      "RelativePath": "Library.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\342\\source\\repos\\Library\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Library.bundle.scp.css"
-    },
     {
       "Identity": "C:\\Users\\342\\source\\repos\\Library\\wwwroot\\css\\site.css",
       "SourceId": "Library",

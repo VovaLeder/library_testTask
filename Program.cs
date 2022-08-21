@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Library.Models;
+using Library;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +13,7 @@ builder.Services.AddCors(o => o.AddPolicy("ReactPolicy", builder =>
     builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
 }));
 
-builder.Services.AddDbContext<ApplicationContext>(options => options.UseNpgsql("Host=localhost;Port=5432;Database=library;Username=postgres;Password=1234"));
+builder.Services.AddDbContext<ApplicationContext>(options => options.UseNpgsql(ConnectionString.ConnectionStr));
 
 var app = builder.Build();
 
