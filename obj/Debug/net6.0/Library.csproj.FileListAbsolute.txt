@@ -24,3 +24,6 @@ C:\Users\342\source\repos\Library\obj\Debug\net6.0\refint\Library.dll
 C:\Users\342\source\repos\Library\obj\Debug\net6.0\Library.pdb
 C:\Users\342\source\repos\Library\obj\Debug\net6.0\Library.genruntimeconfig.cache
 C:\Users\342\source\repos\Library\obj\Debug\net6.0\ref\Library.dll
+C:\Users\342\source\repos\Library\bin\Debug\net6.0\react-ui-crud\public\manifest.json
+C:\Users\342\source\repos\Library\bin\Debug\net6.0\react-ui-crud\package-lock.json
+C:\Users\342\source\repos\Library\bin\Debug\net6.0\react-ui-crud\package.json

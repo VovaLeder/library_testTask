@@ -3,8 +3,15 @@ using Library;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddRazorPages();
+//builder.Services.AddRazorPages();
 
+builder.Services.AddMvc(options =>
+{
+    options.EnableEndpointRouting = false;
+});
+
+
+//builder.Services.AddMvc();
 builder.Services.AddSingleton<BookService>();
 builder.Services.AddCors(o => o.AddPolicy("ReactPolicy", builder =>
 {

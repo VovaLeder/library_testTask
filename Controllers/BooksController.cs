@@ -8,7 +8,7 @@ namespace Library.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [EnableCors("ReactPolicy")]
-    public class BooksController : ControllerBase
+    public class BooksController : Controller
     {
         private readonly BookService bookService;
         public BooksController(BookService bookService)

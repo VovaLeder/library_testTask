@@ -1,0 +1,1 @@
+export const BOOKS_API_URL = 'https://localhost:7200/api/books';
