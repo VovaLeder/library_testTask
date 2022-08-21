@@ -57,8 +57,8 @@ class DataTable extends Component {
                                 <div>
                                     <CreateModal
                                         isNew={false}
-                                        user={item}
-                                        updateUserIntoState={this.props.updateState} />
+                                        book={item}
+                                        updateBookIntoState={this.props.updateState} />
                                     &nbsp;&nbsp;&nbsp;
                                     <Button color="danger" onClick={() => this.deleteItem(item.id)}>Delete</Button>
                                 </div>

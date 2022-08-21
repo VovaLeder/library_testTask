@@ -13,6 +13,16 @@ class Home extends Component {
     getItens = () => {
         fetch(BOOKS_API_URL)
             .then(res => res.json())
+            .then(res => res.map(
+                item => {
+                    var date = item.publishDate;
+                    var y = date.slice(0, 4);
+                    var m = date.slice(5, 7);
+                    var d = date.slice(8, 10);
+                    item.publishDate = new Date(y, m - 1, d).toLocaleDateString("ru-RF");
+                    return item;
+                })
+            )
             .then(res => this.setState({ items: res }))
             .catch(err => console.log(err));
     }
