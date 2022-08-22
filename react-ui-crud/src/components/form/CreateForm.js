@@ -5,7 +5,7 @@ class CreateForm extends React.Component {
     state = {
         id: 0,
         title: '',
-        publishDate: new Date(),
+        publishDate: '',
         genre: '',
         author: ''
     }
@@ -76,11 +76,11 @@ class CreateForm extends React.Component {
             </FormGroup>
             <FormGroup>
                 <Label for="genre">Genre:</Label>
-                <Input type="text" name="genre" onChange={this.onChange} value={this.state.genre === null ? '' : this.state.genre} />
+                <Input type="text" name="genre" onChange={this.onChange} value={this.state.genre === '' ? '' : this.state.genre} />
             </FormGroup>
             <FormGroup>
                 <Label for="author">Author:</Label>
-                <Input type="text" name="author" onChange={this.onChange} value={this.state.author === null ? '' : this.state.author} />
+                <Input type="text" name="author" onChange={this.onChange} value={this.state.author === '' ? '' : this.state.author} />
             </FormGroup>
             <Button>Send</Button>
         </Form>;

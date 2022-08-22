@@ -37,7 +37,7 @@ namespace Library.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] Book book)
         {
-            book.PublishDate = book.PublishDate.ToUniversalTime();
+            book.PublishDate = book.PublishDate.ToUniversalTime().AddDays(1);
             _context.Books.Add(book);
             _context.SaveChanges();
             return Ok(book);
@@ -49,7 +49,7 @@ namespace Library.Controllers
         {
             Book old_book = _context.Books.First(x => x.Id == id);
             old_book.Title = book.Title;
-            old_book.PublishDate = book.PublishDate.ToUniversalTime();
+            old_book.PublishDate = book.PublishDate.ToUniversalTime().AddDays(1);
             old_book.Genre = book.Genre;
             old_book.Author = book.Author;
 
