@@ -24,7 +24,13 @@ class Home extends Component {
                 })
             )
             .then(res => this.setState({ items: res }))
-            .catch(err => console.log(err));
+            .catch(err =>
+            {
+                if (err instanceof TypeError) {
+                    alert(err.message + ". Please, contact providers of API and the front-end application.");
+                }
+                console.log(err);
+            });
     }
     addBookToState = book => {
         this.setState(previous => ({

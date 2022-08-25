@@ -68,19 +68,19 @@ class CreateForm extends React.Component {
         return <Form onSubmit={this.props.book ? this.submitEdit : this.submitNew}>
             <FormGroup>
                 <Label for="title">Title:</Label>
-                <Input type="text" name="title" onChange={this.onChange} value={this.state.title === '' ? '' : this.state.title} />
+                <Input type="text" name="title" onChange={this.onChange} value={this.state.title === '' ? '' : this.state.title} required />
             </FormGroup>
             <FormGroup>
                 <Label for="publishDate">Publish Date:</Label>
-                <Input type="date" name="publishDate" onChange={this.onChange} value={this.state.publishDate === null ? '' : this.state.publishDate} />
+                <Input type="date" name="publishDate" onChange={this.onChange} value={this.state.publishDate === null ? '' : this.state.publishDate} required/>
             </FormGroup>
             <FormGroup>
                 <Label for="genre">Genre:</Label>
-                <Input type="text" name="genre" onChange={this.onChange} value={this.state.genre === '' ? '' : this.state.genre} />
+                <Input type="text" name="genre" onChange={this.onChange} value={this.state.genre === '' ? '' : this.state.genre} required />
             </FormGroup>
             <FormGroup>
                 <Label for="author">Author:</Label>
-                <Input type="text" name="author" onChange={this.onChange} value={this.state.author === '' ? '' : this.state.author} />
+                <Input type="text" name="author" onChange={this.onChange} value={this.state.author === '' ? '' : this.state.author} required />
             </FormGroup>
             <Button>Send</Button>
         </Form>;

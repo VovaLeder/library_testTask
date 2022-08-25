@@ -4,7 +4,7 @@ class AppFooter extends React.Component {
         return <Fragment>
             <hr className="featurette-divider" />
             <footer style={{ padding: "0 50px" }} className="navbar fixed-bottom">
-                <p>Made by Vladimir <i>VovaLeder</i> Bliznyuk</p>
+                <p>Made by Vladimir <i>VovaLeder</i> Bliznyuk in educational purposes</p>
             </footer>
         </Fragment>;
     }
